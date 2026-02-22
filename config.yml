@@ -1,0 +1,21 @@
+# arXiv categories to monitor
+# Full list: https://arxiv.org/category_taxonomy
+categories:
+  - cs.AI
+  - cs.SE
+
+# Optional keyword filters (applied to title + abstract)
+# If empty or omitted, ALL papers in the categories above are posted.
+# Papers matching ANY keyword are included.
+keywords:
+  - "large language model"
+  - "transformer"
+
+# Maximum number of papers to fetch per category per run
+max_results_per_category: 50
+
+# Issue label prefix (categories become labels like "arxiv:cs.AI")
+label_prefix: "arxiv"
+
+# Whether to include cross-listed papers
+include_cross_listed: true

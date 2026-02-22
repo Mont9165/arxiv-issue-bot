@@ -1,0 +1,18 @@
+[project]
+name = "arxiv-issue-bot"
+version = "0.1.0"
+description = "Automatically create GitHub Issues for new arXiv papers"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "arxiv>=2.1.0",
+    "pyyaml>=6.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
