@@ -8,9 +8,10 @@ A GitHub Actions workflow runs daily, queries the arXiv API for recent papers in
 
 ## Quick start
 
-1. Click **"Use this template"** to create your own repository
+1. **Fork** this repository
 2. Edit `config.yml` to set your categories and keywords
-3. That's it -- the bot runs daily via GitHub Actions
+3. Enable GitHub Actions in your fork (Actions tab > "I understand my workflows, go ahead and enable them")
+4. That's it -- the bot runs daily via GitHub Actions
 
 You can also trigger it manually: **Actions** tab > **Fetch arXiv Papers** > **Run workflow**.
 
@@ -30,6 +31,10 @@ categories:
 keywords:
   - "large language model"
   - "transformer"
+  - "refactoring"
+  - "agent"
+  - "bug"
+  - "defect"
 
 # Maximum number of papers to fetch per category per run
 max_results_per_category: 50

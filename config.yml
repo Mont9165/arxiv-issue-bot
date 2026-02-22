@@ -10,6 +10,10 @@ categories:
 keywords:
   - "large language model"
   - "transformer"
+  - "refactoring"
+  - "agent"
+  - "bug"
+  - "defect"
 
 # Maximum number of papers to fetch per category per run
 max_results_per_category: 50
