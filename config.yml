@@ -8,15 +8,13 @@ categories:
 # If empty or omitted, ALL papers in the categories above are posted.
 # Papers matching ANY keyword are included.
 keywords:
-  - "large language model"
-  - "fuzzing"
-  - "regression"
+  - "semantic"
+  - "Semantic Operators"
   - "database"
   - "DBMS"
-  - "test"
-  - "bug"
   - "cardinality estimation"
   - "query optimization"
+  - "large language model"
 
 # Maximum number of papers to fetch per category per run
 max_results_per_category: 50
