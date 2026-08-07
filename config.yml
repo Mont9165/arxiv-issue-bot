@@ -1,19 +1,20 @@
 # arXiv categories to monitor
 # Full list: https://arxiv.org/category_taxonomy
 categories:
-  - cs.AI
+  - cs.DB
   - cs.SE
 
 # Optional keyword filters (applied to title + abstract)
 # If empty or omitted, ALL papers in the categories above are posted.
 # Papers matching ANY keyword are included.
 keywords:
+  - "semantic"
+  - "Semantic Operators"
+  - "database"
+  - "DBMS"
+  - "cardinality estimation"
+  - "query optimization"
   - "large language model"
-  - "transformer"
-  - "refactoring"
-  - "agent"
-  - "bug"
-  - "defect"
 
 # Maximum number of papers to fetch per category per run
 max_results_per_category: 50
@@ -23,3 +24,12 @@ label_prefix: "arxiv"
 
 # Whether to include cross-listed papers
 include_cross_listed: true
+
+# Where to save archived paper summaries
+archive_dir: "data/papers"
+
+# Where to save daily summary reports
+report_dir: "reports"
+
+# Whether to also create GitHub Issues for new papers
+create_github_issues: false

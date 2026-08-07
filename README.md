@@ -1,17 +1,17 @@
 # arxiv-issue-bot
 
-Automatically create GitHub Issues for new arXiv papers in your research areas.
+Automatically fetch new arXiv papers in your research areas and save their English abstracts into this repository.
 
 ## How it works
 
-A GitHub Actions workflow runs daily, queries the arXiv API for recent papers in your configured categories, filters by optional keywords, and creates a GitHub Issue for each new paper. Duplicate papers are never posted twice.
+A GitHub Actions workflow runs daily, queries the arXiv API for recent papers in your configured categories, filters by optional keywords, saves each new paper as a Markdown file under `data/papers/`, and generates a daily summary report under `reports/`.
 
 ## Quick start
 
 1. **Fork** this repository
 2. Edit `config.yml` to set your categories and keywords
 3. Enable GitHub Actions in your fork (Actions tab > "I understand my workflows, go ahead and enable them")
-4. That's it -- the bot runs daily via GitHub Actions
+4. That's it -- the bot runs daily via GitHub Actions, commits new archives and reports back to your repo, and uploads the daily report as an Actions artifact
 
 You can also trigger it manually: **Actions** tab > **Fetch arXiv Papers** > **Run workflow**.
 
@@ -39,30 +39,43 @@ keywords:
 # Maximum number of papers to fetch per category per run
 max_results_per_category: 50
 
-# Issue label prefix (categories become labels like "arxiv:cs.AI")
+# Optional: issue label prefix when create_github_issues is true
 label_prefix: "arxiv"
 
 # Whether to include cross-listed papers
 include_cross_listed: true
+
+# Where to save archived paper summaries
+archive_dir: "data/papers"
+
+# Where to save daily summary reports
+report_dir: "reports"
+
+# Optional: also create GitHub Issues for new papers
+create_github_issues: false
 ```
+
+Each archived paper file contains paper metadata plus the original English abstract. Each daily report summarizes the newly discovered papers for that run.
 
 ## How deduplication works
 
-- Each issue title contains the arXiv ID: `[2401.12345v1] Paper Title`
-- Before creating an issue, the bot searches existing issues for the same base ID (version number stripped)
-- Both open and closed issues are checked, so closing an issue won't cause duplicates
+- Each archive filename is based on the base arXiv ID, with the version suffix stripped
+- Before saving, the bot checks whether that archive file already exists
+- A daily report file is generated for each run date
+- Optional GitHub issue creation still uses the same version-stripped ID check as before
 
 ## Development
 
 ```bash
 # Install dependencies
-uv sync
+python3 -m pip install .
+python3 -m pip install pytest
 
 # Run tests
-uv run pytest
+python3 -m pytest
 
-# Run locally (requires gh CLI authenticated)
-uv run python -m src.main
+# Run locally
+python3 -m src.main
 ```
 
 ## Extending
