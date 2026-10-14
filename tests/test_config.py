@@ -13,4 +13,3 @@ def test_load_config_uses_archive_defaults(tmp_path):
 
     assert config.categories == ["cs.AI"]
     assert config.archive_dir == "data/papers"
-    assert config.create_github_issues is False

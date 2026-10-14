@@ -1,86 +1,71 @@
 # arxiv-issue-bot
 
-Automatically fetch new arXiv papers in your research areas and save their English abstracts into this repository.
+Automatically collect new arXiv papers in your research areas, archive their original English abstracts as Markdown, and publish a concise daily digest. No GitHub Issues are created.
+
+**[Latest daily summary](reports/latest.md)** · [Daily reports](reports/) · [Paper archive](data/papers/)
 
 ## How it works
 
-A GitHub Actions workflow runs daily, queries the arXiv API for recent papers in your configured categories, filters by optional keywords, saves each new paper as a Markdown file under `data/papers/`, and generates a daily summary report under `reports/`.
+The GitHub Actions workflow runs every day at **09:00 UTC** (18:00 JST). It fetches recent papers in the configured categories, applies keyword filters, and commits the new files back to the repository.
+
+- `data/papers/YYYY-MM-DD_Title_arxiv-id.md`: one paper per file, with its publication date, title, authors, categories, source links, and full original abstract. For example: `2026-10-13_RT-J-Large-Scale-Pretraining-of-Relational-Transformers-for-Context-Efficient-Predictions_2610.17867.md`.
+- `reports/YYYY-MM-DD.md`: papers first discovered on that UTC collection date, with counts by primary category, titles, publication dates, and short excerpts from the original English abstracts (up to 240 characters each). These are extracts, not AI-generated or translated summaries.
+- `reports/latest.md`: the most recent daily report. The same report is displayed in the Actions run summary and uploaded as an artifact.
+
+The date in a **paper filename is its arXiv publication date**; the date in a **report filename is its collection date**. A report can include papers published on earlier days. arXiv publication does not necessarily mean peer-reviewed publication.
 
 ## Quick start
 
-1. **Fork** this repository
-2. Edit `config.yml` to set your categories and keywords
-3. Enable GitHub Actions in your fork (Actions tab > "I understand my workflows, go ahead and enable them")
-4. That's it -- the bot runs daily via GitHub Actions, commits new archives and reports back to your repo, and uploads the daily report as an Actions artifact
+1. Fork this repository.
+2. Edit `config.yml` to set your categories and keywords.
+3. Enable GitHub Actions in your fork.
+4. Read [the latest summary](reports/latest.md) after each daily run.
 
-You can also trigger it manually: **Actions** tab > **Fetch arXiv Papers** > **Run workflow**.
+You can also trigger it manually: **Actions → Fetch arXiv Papers → Run workflow**. The workflow needs `contents: write` to commit its results; no issue permissions, GitHub CLI token, or external summarization API key are needed.
 
 ## Configuration
 
-Edit `config.yml`:
-
 ```yaml
-# arXiv categories to monitor
-# Full list: https://arxiv.org/category_taxonomy
 categories:
-  - cs.AI
+  - cs.DB
   - cs.SE
 
-# Optional keyword filters (applied to title + abstract)
-# If empty or omitted, ALL papers in the categories above are posted.
+# Match ANY keyword in the title or abstract. Empty means all papers.
 keywords:
+  - "semantic"
+  - "database"
   - "large language model"
-  - "transformer"
-  - "refactoring"
-  - "agent"
-  - "bug"
-  - "defect"
 
-# Maximum number of papers to fetch per category per run
 max_results_per_category: 50
-
-# Optional: issue label prefix when create_github_issues is true
-label_prefix: "arxiv"
-
-# Whether to include cross-listed papers
 include_cross_listed: true
-
-# Where to save archived paper summaries
 archive_dir: "data/papers"
-
-# Where to save daily summary reports
 report_dir: "reports"
-
-# Optional: also create GitHub Issues for new papers
-create_github_issues: false
 ```
 
-Each archived paper file contains paper metadata plus the original English abstract. Each daily report summarizes the newly discovered papers for that run.
+The fetch limit applies per category per run. The digest describes newly discovered papers within that fetched set, not every paper published on arXiv. If a category is busy or runs are missed, raise the limit to avoid missing papers. If you change the output directories, also update the workflow's commit paths.
 
-## How deduplication works
+## Filenames and deduplication
 
-- Each archive filename is based on the base arXiv ID, with the version suffix stripped
-- Before saving, the bot checks whether that archive file already exists
-- A daily report file is generated for each run date
-- Optional GitHub issue creation still uses the same version-stripped ID check as before
+- Filenames use the publication date, a filesystem-safe title, and the base arXiv ID to avoid collisions. Long titles are shortened in filenames; the complete title stays in the document.
+- Existing ID-only archives are automatically renamed without changing their contents.
+- Deduplication uses the version-stripped arXiv ID regardless of the filename or title. New versions of an archived paper are not treated as new papers.
+- Re-running on the same day preserves earlier results and merges newly found papers. Empty days still produce a report.
+- Existing full-length daily reports remain readable; a report is converted to the concise format when that date is regenerated.
 
 ## Development
 
 ```bash
-# Install dependencies
 python3 -m pip install .
 python3 -m pip install pytest
-
-# Run tests
 python3 -m pytest
-
-# Run locally
 python3 -m src.main
 ```
 
+A local run fetches papers and writes archives and reports; committing is handled separately by the workflow.
+
 ## Extending
 
-To add a new paper source (e.g., Semantic Scholar), implement the `PaperFetcher` interface in `src/fetcher.py`.
+To add a new paper source, implement the `PaperFetcher` interface in `src/fetcher.py`.
 
 ## License
 

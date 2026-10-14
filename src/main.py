@@ -1,17 +1,21 @@
-import sys
+import os
 import time
-from datetime import date
+from datetime import datetime, timezone
+from pathlib import Path
 
-from src.archive import archive_paper, is_already_archived
+from src.archive import archive_paper, load_archive, migrate_archive
 from src.config import load_config
 from src.fetcher import ArxivFetcher, Paper
 from src.filter import filter_papers
-from src.issue_manager import create_issue, is_already_posted, normalize_arxiv_id
+from src.identifiers import normalize_arxiv_id
 from src.report import write_daily_report
 
 
 def main() -> None:
     config = load_config()
+    report_date = datetime.now(timezone.utc).date()
+    migrate_archive(config.archive_dir)
+    existing = load_archive(config.archive_dir)
     fetcher = ArxivFetcher()
 
     all_papers: dict[str, Paper] = {}
@@ -35,46 +39,33 @@ def main() -> None:
     print(f"After keyword filtering: {len(filtered)} papers")
 
     new_papers = [
-        p for p in filtered if not is_already_archived(config.archive_dir, p.source_id)
+        p for p in filtered if normalize_arxiv_id(p.source_id) not in existing
     ]
     print(f"New papers (not yet archived): {len(new_papers)}")
 
+    # Write the report first: a failed archive write can be recovered on retry
+    # without losing the IDs discovered in this run.
     report_path = write_daily_report(
         papers=new_papers,
         report_dir=config.report_dir,
-        report_date=date.today(),
+        report_date=report_date,
         categories=config.categories,
         keywords=config.keywords,
+        archive_dir=config.archive_dir,
     )
     print(f"Daily report: {report_path}")
 
     archived = 0
-    created = 0
     for paper in new_papers:
         archive_path = archive_paper(paper, config.archive_dir)
         archived += 1
         print(f"  Archived: [{paper.source_id}] {archive_path}")
 
-        if not config.create_github_issues:
-            continue
+    if output := os.environ.get("GITHUB_OUTPUT"):
+        with Path(output).open("a", encoding="utf-8") as stream:
+            stream.write(f"report_path={report_path}\n")
 
-        if is_already_posted(paper.source_id):
-            print(f"  Skipped issue: [{paper.source_id}] already exists")
-            continue
-
-        if create_issue(paper, config.label_prefix):
-            created += 1
-            print(f"  Created issue: [{paper.source_id}] {paper.title}")
-        else:
-            print(
-                f"  FAILED issue:  [{paper.source_id}] {paper.title}",
-                file=sys.stderr,
-            )
-
-    print(
-        f"\nDone. Archived {archived} new papers"
-        f" and created {created} new issues."
-    )
+    print(f"\nDone. Archived {archived} new papers.")
 
 
 if __name__ == "__main__":

@@ -1,7 +1,7 @@
 [project]
 name = "arxiv-issue-bot"
 version = "0.1.0"
-description = "Automatically create GitHub Issues for new arXiv papers"
+description = "Archive new arXiv papers as Markdown and generate concise daily summaries"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

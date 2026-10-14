@@ -7,7 +7,10 @@ on:
 
 permissions:
   contents: write
-  issues: write
+
+concurrency:
+  group: archive-arxiv-papers
+  cancel-in-progress: false
 
 jobs:
   fetch-papers:
@@ -24,18 +27,14 @@ jobs:
         run: python3 -m pip install .
 
       - name: Fetch papers and archive abstracts
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        id: archive
         run: python3 -m src.main
-
-      - name: Resolve report path
-        run: echo "REPORT_PATH=reports/$(date -u +%F).md" >> "$GITHUB_ENV"
 
       - name: Upload daily report artifact
         uses: actions/upload-artifact@v4
         with:
           name: arxiv-daily-report
-          path: ${{ env.REPORT_PATH }}
+          path: ${{ steps.archive.outputs.report_path }}
           if-no-files-found: error
 
       - name: Commit archived papers
