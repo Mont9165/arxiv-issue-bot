@@ -1,49 +1,53 @@
-# arXiv デイリーサマリー — 2026-10-15
+# arXiv デイリーサマリー — 2026-10-17
 
-**新着 10 件**（UTC の収集日基準。公開日は各項目に記載）
+**新着 11 件**（UTC の収集日基準。公開日は各項目に記載）
 
 - 対象分野: `cs.DB`, `cs.SE`
 - キーワード: `semantic`, `Semantic Operators`, `database`, `DBMS`, `cardinality estimation`, `query optimization`, `large language model`
-- 主分野別: `cs.CR` 2 件、`cs.DB` 1 件、`cs.LG` 1 件、`cs.SE` 6 件
+- 主分野別: `cs.AI` 1 件、`cs.CR` 2 件、`cs.DB` 4 件、`cs.SE` 4 件
 
 各項目は原文の要旨冒頭の短い抜粋です。全文は「詳細」から読めます。
 
-<!-- arxiv:2610.20527 -->
-- **[JetStream: Generating Verified Query Accelerators for Existing Database Systems](http://arxiv.org/abs/2610.20527v1)** （2026-10-14 / `cs.DB`） [詳細](../data/papers/2026-10-14_JetStream-Generating-Verified-Query-Accelerators-for-Existing-Database-Systems_2610.20527.md)
-  Recent work has shown that LLMs can synthesize highly specialized database systems for fixed workloads, but these systems replace the DBMS's native storage and assume static data: users must migrate their data, often give up ad-hoc…
+<!-- arxiv:2610.22310 -->
+- **[TraHist: Fast and Accurate Cardinality Estimation for Trajectory Data (Extended Version)](http://arxiv.org/abs/2610.22310v1)** （2026-10-15 / `cs.DB`） [詳細](../data/papers/2026-10-15_TraHist-Fast-and-Accurate-Cardinality-Estimation-for-Trajectory-Data-Extended-Version_2610.22310.md)
+  Cardinality estimation is fundamental for query optimization in database systems.
 
-<!-- arxiv:2610.20344 -->
-- **[Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents](http://arxiv.org/abs/2610.20344v1)** （2026-10-14 / `cs.SE`） [詳細](../data/papers/2026-10-14_Doc2Harness-Benchmarking-LLMs-on-Long-Horizon-Harness-Engineering-of-Coding-Agents_2610.20344.md)
-  Agents driven by large language models are increasingly deployed on long-horizon tasks, where they use tools and modify real workspaces.
+<!-- arxiv:2610.22089 -->
+- **[Are We Testing the Wrong Quantum Bugs? A Study of Fault Representation Gaps in Quantum Software Testing](http://arxiv.org/abs/2610.22089v1)** （2026-10-15 / `cs.SE`） [詳細](../data/papers/2026-10-15_Are-We-Testing-the-Wrong-Quantum-Bugs-A-Study-of-Fault-Representation-Gaps-in-Quantum-Software-Testing_2610.22089.md)
+  Quantum software relies on compilers, intermediate representations, and execution frameworks that transform programs before execution.
 
-<!-- arxiv:2610.20245 -->
-- **[P2Patch: Exploit-Guided Vulnerability Repair](http://arxiv.org/abs/2610.20245v1)** （2026-10-14 / `cs.CR`） [詳細](../data/papers/2026-10-14_P2Patch-Exploit-Guided-Vulnerability-Repair_2610.20245.md)
-  Large language models are increasingly deployed as autonomous agents for automated program repair, patching software vulnerabilities through multi-step reasoning and tool use.
+<!-- arxiv:2610.22061 -->
+- **[FAOPs: Normal Forms and an Algebra for AI Agent Workflows](http://arxiv.org/abs/2610.22061v1)** （2026-10-15 / `cs.AI`） [詳細](../data/papers/2026-10-15_FAOPs-Normal-Forms-and-an-Algebra-for-AI-Agent-Workflows_2610.22061.md)
+  Organizations increasingly encode operational procedures as multi-step agent skills, here called Agent Operating Procedures (AOPs), that must be traceable, auditable, reproducible, access-controlled, and bounded in time and cost,…
 
-<!-- arxiv:2610.19970 -->
-- **[Temporal Adaptive Fine-Tuning for Code Comprehension](http://arxiv.org/abs/2610.19970v1)** （2026-10-14 / `cs.SE`） [詳細](../data/papers/2026-10-14_Temporal-Adaptive-Fine-Tuning-for-Code-Comprehension_2610.19970.md)
-  Repository-level code comprehension question answering (QA) supports developer reasoning over functionality and usage distributed across codebases.
+<!-- arxiv:2610.21914 -->
+- **[CodeHealth Predicts the Token Cost of Agentic Code Review: A Pre-Registered Study of 465 Agent-Authored Pull Requests](http://arxiv.org/abs/2610.21914v1)** （2026-10-15 / `cs.SE`） [詳細](../data/papers/2026-10-15_CodeHealth-Predicts-the-Token-Cost-of-Agentic-Code-Review-A-Pre-Registered-Study-of-465-Agent-Authored-Pull-Requests_2610.21914.md)
+  Context: Organizations increasingly delegate code review to multi-agent large language model (LLM) pipelines billed per token.
 
-<!-- arxiv:2610.19961 -->
-- **[Taming the Online Software Engineering Tongue: Detecting and Reducing Offensive Language in Software Communities](http://arxiv.org/abs/2610.19961v1)** （2026-10-14 / `cs.SE`） [詳細](../data/papers/2026-10-14_Taming-the-Online-Software-Engineering-Tongue-Detecting-and-Reducing-Offensive-Language-in-Software-Communities_2610.19961.md)
-  Online Software Engineering (SE) communities such as Stack Overflow have become unwelcoming and hostile spaces, as evidenced by the presence of rude and offensive comments that are detrimental to the emotional wellbeing of participants.
+<!-- arxiv:2610.21796 -->
+- **[Reflective Compositional Grounding for Natural-Language-to-SPARQL](http://arxiv.org/abs/2610.21796v1)** （2026-10-15 / `cs.DB`） [詳細](../data/papers/2026-10-15_Reflective-Compositional-Grounding-for-Natural-Language-to-SPARQL_2610.21796.md)
+  Natural-language query generation over large knowledge graphs embodies the classical vocabulary problem in human-systems communication.
 
-<!-- arxiv:2610.19566 -->
-- **[Mission (Im)Possible: Towards Autonomous Discovery of Autopilot Logic Flaws in Open-Source Drone Frameworks](http://arxiv.org/abs/2610.19566v1)** （2026-10-14 / `cs.CR`） [詳細](../data/papers/2026-10-14_Mission-Im-Possible-Towards-Autonomous-Discovery-of-Autopilot-Logic-Flaws-in-Open-Source-Drone-Frameworks_2610.19566.md)
-  Autonomous drones are increasingly deployed in safety-critical tasks, yet their autopilot software can still contain subtle logic flaws that lead to unsafe behaviors.
+<!-- arxiv:2610.21421 -->
+- **[The Role of Agentic Instruction Categories for Code Generation: A Study of Five Python Libraries](http://arxiv.org/abs/2610.21421v1)** （2026-10-15 / `cs.SE`） [詳細](../data/papers/2026-10-15_The-Role-of-Agentic-Instruction-Categories-for-Code-Generation-A-Study-of-Five-Python-Libraries_2610.21421.md)
+  Agentic coding systems increasingly rely on repository-level agent files, such as AGENTS.md, to communicate project knowledge and developer intent.
 
-<!-- arxiv:2610.19447 -->
-- **[BenchChecker: Assessing the Credibility of Bug-Fixing Benchmarks for LLMs](http://arxiv.org/abs/2610.19447v1)** （2026-10-14 / `cs.SE`） [詳細](../data/papers/2026-10-14_BenchChecker-Assessing-the-Credibility-of-Bug-Fixing-Benchmarks-for-LLMs_2610.19447.md)
-  While Large Language Models (LLMs) show promise for Automatic Program Repair (APR), existing benchmarks suffer from data contamination, in which test samples appear in training sets, artificially inflating performance.
+<!-- arxiv:2610.21373 -->
+- **[Evaluating and Improving Static Application Security Testing Tools for Rust](http://arxiv.org/abs/2610.21373v1)** （2026-10-15 / `cs.CR`） [詳細](../data/papers/2026-10-15_Evaluating-and-Improving-Static-Application-Security-Testing-Tools-for-Rust_2610.21373.md)
+  Rust has become a popular systems programming language in recent years because of its strong guarantees on memory and concurrency safety.
 
-<!-- arxiv:2610.19167 -->
-- **[Beyond Functional Correctness: Static Code Quality Profiling of LLM-Generated Code](http://arxiv.org/abs/2610.19167v1)** （2026-10-13 / `cs.SE`） [詳細](../data/papers/2026-10-13_Beyond-Functional-Correctness-Static-Code-Quality-Profiling-of-LLM-Generated-Code_2610.19167.md)
-  Large language models (LLMs) are increasingly used for code generation, yet most evaluations still focus on whether generated code passes benchmark test suites.
+<!-- arxiv:2610.21316 -->
+- **[When CONTRIBUTING Files Fall Short: Revising OSS Contribution Guidelines with Repository Evidence](http://arxiv.org/abs/2610.21316v1)** （2026-10-15 / `cs.SE`） [詳細](../data/papers/2026-10-15_When-CONTRIBUTING-Files-Fall-Short-Revising-OSS-Contribution-Guidelines-with-Repository-Evidence_2610.21316.md)
+  Contribution guidelines help newcomers participate in open-source software projects, yet often contain incomplete or outdated information.
 
-<!-- arxiv:2610.19157 -->
-- **[DivAlgo: A systematic evaluation of algorithmic diversity for code generation models](http://arxiv.org/abs/2610.19157v1)** （2026-10-13 / `cs.SE`） [詳細](../data/papers/2026-10-13_DivAlgo-A-systematic-evaluation-of-algorithmic-diversity-for-code-generation-models_2610.19157.md)
-  Code generation models are actively being used in professional and educational settings.
+<!-- arxiv:2610.21309 -->
+- **[Combining LLM and Dynamic Analysis for Universal Testing of Static Application Security Testing Tools](http://arxiv.org/abs/2610.21309v1)** （2026-10-15 / `cs.CR`） [詳細](../data/papers/2026-10-15_Combining-LLM-and-Dynamic-Analysis-for-Universal-Testing-of-Static-Application-Security-Testing-Tools_2610.21309.md)
+  Static application security testing (SAST) tools help detect potential software vulnerabilities, but they themselves contain faults undermining reliability and usability.
 
-<!-- arxiv:2610.19142 -->
-- **[Towards Training and Inference of Graph Neural Networks in Graph Databases](http://arxiv.org/abs/2610.19142v1)** （2026-10-13 / `cs.LG`） [詳細](../data/papers/2026-10-13_Towards-Training-and-Inference-of-Graph-Neural-Networks-in-Graph-Databases_2610.19142.md)
-  Graph Neural Networks on large graphs commonly rely on in-memory graph storage with ad hoc data processing pipelines for both training and inference.
+<!-- arxiv:2610.21264 -->
+- **[AdaBool: Sparse Boolean Matrix Processing with Adaptive Data Representation](http://arxiv.org/abs/2610.21264v1)** （2026-10-15 / `cs.DB`） [詳細](../data/papers/2026-10-15_AdaBool-Sparse-Boolean-Matrix-Processing-with-Adaptive-Data-Representation_2610.21264.md)
+  Many data processing tasks revolve around determining whether logical relationships exist between two sets of entities, a pattern that can be naturally modeled as Sparse Boolean Matrix Multiplication (SpBMM).
+
+<!-- arxiv:2610.21174 -->
+- **[Amora: Communication-Efficient Private Approximate Nearest Neighbors Search](http://arxiv.org/abs/2610.21174v1)** （2026-10-15 / `cs.DB`） [詳細](../data/papers/2026-10-15_Amora-Communication-Efficient-Private-Approximate-Nearest-Neighbors-Search_2610.21174.md)
+  Approximate nearest neighbors search (ANNS) over cloud-hosted vector databases raises a critical privacy concern: the query vector, which often encodes sensitive user intent, is exposed to the server.
