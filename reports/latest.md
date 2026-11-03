@@ -1,45 +1,109 @@
-# arXiv デイリーサマリー — 2026-11-02
+# arXiv デイリーサマリー — 2026-11-03
 
-**新着 9 件**（UTC の収集日基準。公開日は各項目に記載）
+**新着 25 件**（UTC の収集日基準。公開日は各項目に記載）
 
 - 対象分野: `cs.DB`, `cs.SE`
 - キーワード: `semantic`, `Semantic Operators`, `database`, `DBMS`, `cardinality estimation`, `query optimization`, `large language model`
-- 主分野別: `cs.DB` 3 件、`cs.LO` 1 件、`cs.SE` 5 件
+- 主分野別: `cs.AI` 2 件、`cs.CL` 3 件、`cs.DB` 8 件、`cs.LG` 1 件、`cs.LO` 1 件、`cs.OS` 1 件、`cs.SE` 9 件
 
 各項目は原文の要旨冒頭の短い抜粋です。全文は「詳細」から読めます。
 
-<!-- arxiv:2610.41800 -->
-- **[Reparo: Synthesizing and Validating Access Control Policies](http://arxiv.org/abs/2610.41800v1)** （2026-10-30 / `cs.SE`） [詳細](../data/papers/2026-10-30_Reparo-Synthesizing-and-Validating-Access-Control-Policies_2610.41800.md)
-  Writing correct access control policies for software applications is difficult because it requires expertise in the authorization language and a thorough understanding of the application's authorization requirements.
+<!-- arxiv:2611.03575 -->
+- **[VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably](http://arxiv.org/abs/2611.03575v1)** （2026-11-02 / `cs.CL`） [詳細](../data/papers/2026-11-02_VeriHarm-Bench-Measuring-Harmful-Success-in-LLM-Coding-Agents-Verifiably_2611.03575.md)
+  Large language model (LLM) coding agents increasingly operate with shell access, allowing them to write scripts, move files, alter permissions, and modify system configurations.
 
-<!-- arxiv:2610.41755 -->
-- **[CypherGuard: Database-Grounded Correction for Reliable Text-to-Cypher](http://arxiv.org/abs/2610.41755v1)** （2026-10-30 / `cs.DB`） [詳細](../data/papers/2026-10-30_CypherGuard-Database-Grounded-Correction-for-Reliable-Text-to-Cypher_2610.41755.md)
-  Text-to-Cypher translates natural-language questions into Cypher queries over property graphs.
+<!-- arxiv:2611.03298 -->
+- **[SQLoom: Set-Contrastive Learning of Syntactic, Semantic, and Logical Dependencies for Text-to-SQL](http://arxiv.org/abs/2611.03298v1)** （2026-11-02 / `cs.DB`） [詳細](../data/papers/2026-11-02_SQLoom-Set-Contrastive-Learning-of-Syntactic-Semantic-and-Logical-Dependencies-for-Text-to-SQL_2611.03298.md)
+  Text-to-SQL translates natural language questions into SQL queries, enabling database access without writing SQL.
 
-<!-- arxiv:2610.41669 -->
-- **[Supervised and LLM-Augmented Cardinality Estimation for Similarity Queries on Knowledge Graphs](http://arxiv.org/abs/2610.41669v1)** （2026-10-30 / `cs.DB`） [詳細](../data/papers/2026-10-30_Supervised-and-LLM-Augmented-Cardinality-Estimation-for-Similarity-Queries-on-Knowledge-Graphs_2610.41669.md)
-  Over the past decades, query cardinality estimation on relational databases has been proven crucial, enabling the result size estimation of all sub-plans of each query.
+<!-- arxiv:2611.03197 -->
+- **[Finding the Pivots to Repair Broken Source-Test Evolution Using LLMs](http://arxiv.org/abs/2611.03197v1)** （2026-11-02 / `cs.SE`） [詳細](../data/papers/2026-11-02_Finding-the-Pivots-to-Repair-Broken-Source-Test-Evolution-Using-LLMs_2611.03197.md)
+  Repairing obsolete tests in response to source code evolution is critical for test suite reliability and software quality assurance.
 
-<!-- arxiv:2610.41562 -->
-- **[SCRBench: Beyond Equivalence Checking for Semantic Change Reasoning in Code](http://arxiv.org/abs/2610.41562v1)** （2026-10-30 / `cs.SE`） [詳細](../data/papers/2026-10-30_SCRBench-Beyond-Equivalence-Checking-for-Semantic-Change-Reasoning-in-Code_2610.41562.md)
-  Understanding how code changes affect program semantics is a core aspect of code reasoning in language models.
+<!-- arxiv:2611.03111 -->
+- **[COVE: A Task-Adaptive, Code-Based Ensemble for Proactive Verification of LLM Outputs](http://arxiv.org/abs/2611.03111v1)** （2026-11-02 / `cs.SE`） [詳細](../data/papers/2026-11-02_COVE-A-Task-Adaptive-Code-Based-Ensemble-for-Proactive-Verification-of-LLM-Outputs_2611.03111.md)
+  Large Language Models (LLMs) are now embedded in enterprise workflows, yet their outputs remain prone to hallucinations: plausible-sounding but factually incorrect or malformed content.
 
-<!-- arxiv:2610.41472 -->
-- **[Post-SQLFix: Property-Guided Repair of LLM-Generated SQL with Runtime Verification](http://arxiv.org/abs/2610.41472v1)** （2026-10-30 / `cs.SE`） [詳細](../data/papers/2026-10-30_Post-SQLFix-Property-Guided-Repair-of-LLM-Generated-SQL-with-Runtime-Verification_2610.41472.md)
-  Large Language Models (LLMs) for Text-to-SQL frequently generate queries with syntax errors, invalid identifier references, or violations of SQL scoping and typing rules.
+<!-- arxiv:2611.02936 -->
+- **[Why Tabular Foundation Models Excel on Relational Data They Have Never Seen](http://arxiv.org/abs/2611.02936v1)** （2026-11-02 / `cs.AI`） [詳細](../data/papers/2026-11-02_Why-Tabular-Foundation-Models-Excel-on-Relational-Data-They-Have-Never-Seen_2611.02936.md)
+  Given a relational database (RDB) storing heterogeneous tabular information, how can we predict missing (or future) values in some target column of interest?
 
-<!-- arxiv:2610.41407 -->
-- **[Fidelity Synopses: Pre-Execution Plan Selection for Approximate Vector Search](http://arxiv.org/abs/2610.41407v1)** （2026-10-30 / `cs.DB`） [詳細](../data/papers/2026-10-30_Fidelity-Synopses-Pre-Execution-Plan-Selection-for-Approximate-Vector-Search_2610.41407.md)
-  Vector search has become a database operator with many physical implementations: different index families, build-time and search-time parameters, and compressed or disk-resident variants.
+<!-- arxiv:2611.02779 -->
+- **[Stop Handcrafting Your Engine! GenDB-V: Towards AI-Generated and Formally Verified Database Systems](http://arxiv.org/abs/2611.02779v1)** （2026-11-02 / `cs.DB`） [詳細](../data/papers/2026-11-02_Stop-Handcrafting-Your-Engine-GenDB-V-Towards-AI-Generated-and-Formally-Verified-Database-Systems_2611.02779.md)
+  For over 50 years, the database community has developed a wide range of successful engines to answer two fundamental questions: how can database systems run faster, and how can we ensure their correctness?
 
-<!-- arxiv:2610.41168 -->
-- **[ROSTrans: Empirically Benchmarking LLMs for ROS1-to-ROS2 Migration](http://arxiv.org/abs/2610.41168v1)** （2026-10-30 / `cs.SE`） [詳細](../data/papers/2026-10-30_ROSTrans-Empirically-Benchmarking-LLMs-for-ROS1-to-ROS2-Migration_2610.41168.md)
-  Although large language models have shown strong capabilities in domain-specific code generation, their performance in robotics software development, especially for the Robot Operating System (ROS), remains largely unexplored.
+<!-- arxiv:2611.02376 -->
+- **[High-Throughput Private Information Retrieval with on-CPU Accelerators](http://arxiv.org/abs/2611.02376v1)** （2026-11-02 / `cs.OS`） [詳細](../data/papers/2026-11-02_High-Throughput-Private-Information-Retrieval-with-on-CPU-Accelerators_2611.02376.md)
+  Private information retrieval (PIR) hides which record a client retrieves by scanning the entire database, and batching is an effective technique to improve throughput by sharing this scan across queries.
 
-<!-- arxiv:2610.41094 -->
-- **[AIFaultBench: A Reproducible Benchmark of Real-World Faults in AI Software Systems](http://arxiv.org/abs/2610.41094v1)** （2026-10-30 / `cs.SE`） [詳細](../data/papers/2026-10-30_AIFaultBench-A-Reproducible-Benchmark-of-Real-World-Faults-in-AI-Software-Systems_2610.41094.md)
-  AI-based software systems remain difficult to debug because their failures can involve interactions among code, models, data, dependencies, hardware, and execution environments.
+<!-- arxiv:2611.02373 -->
+- **[Mixed-Type Relational Database Synthesis with Graph-Prompted Language Model](http://arxiv.org/abs/2611.02373v1)** （2026-11-02 / `cs.DB`） [詳細](../data/papers/2026-11-02_Mixed-Type-Relational-Database-Synthesis-with-Graph-Prompted-Language-Model_2611.02373.md)
+  Data access is often limited by privacy or proprietary restrictions, motivating relational database synthesis, which synthesizes realistic contents across related tables.
 
-<!-- arxiv:2610.40812 -->
-- **[Merging and Evolution of Data Bases: A Many-Logic Approach](http://arxiv.org/abs/2610.40812v1)** （2026-10-29 / `cs.LO`） [詳細](../data/papers/2026-10-29_Merging-and-Evolution-of-Data-Bases-A-Many-Logic-Approach_2610.40812.md)
-  A new approach to information-based logics using many-logic modal structures (MLMSs) was recently proposed by Martins et al.
+<!-- arxiv:2611.02349 -->
+- **[APG: Agentic Static-Analysis Infrastructure on LLVM-IR Graph Databases](http://arxiv.org/abs/2611.02349v1)** （2026-11-02 / `cs.SE`） [詳細](../data/papers/2026-11-02_APG-Agentic-Static-Analysis-Infrastructure-on-LLVM-IR-Graph-Databases_2611.02349.md)
+  LLM-based coding agents increasingly rely on external program knowledge, yet access to static-analysis graphs alone does not ensure appropriate operation selection or evidence interpretation.
+
+<!-- arxiv:2611.02285 -->
+- **[Modern Software Engineering with Verification Agents: A Spec-First Architecture for Autonomous Synthesis, Verification IRs, and Organizational Scale](http://arxiv.org/abs/2611.02285v1)** （2026-11-01 / `cs.SE`） [詳細](../data/papers/2026-11-01_Modern-Software-Engineering-with-Verification-Agents-A-Spec-First-Architecture-for-Autonomous-Synthesis-Verification-IRs-and-Organizational-Scale_2611.02285.md)
+  When autonomous coding agents synthesize implementation code, formal specifications, and mechanical proofs simultaneously, the software engineering hierarchy inverts: the formal specification becomes the primary human-reviewed artifact,…
+
+<!-- arxiv:2611.02132 -->
+- **[TSSDA: An Autonomous Agent for Constructing a Time-Series Text-to-SQL Benchmark](http://arxiv.org/abs/2611.02132v1)** （2026-11-01 / `cs.LG`） [詳細](../data/papers/2026-11-01_TSSDA-An-Autonomous-Agent-for-Constructing-a-Time-Series-Text-to-SQL-Benchmark_2611.02132.md)
+  As agents increasingly undertake data querying, Text-to-SQL serves as a foundational capability for database access.
+
+<!-- arxiv:2611.02125 -->
+- **[Semantic Interoperability in Federated Digital Twin Systems: A Systematic Review Through the Levels of Conceptual Interoperability Model](http://arxiv.org/abs/2611.02125v1)** （2026-11-01 / `cs.SE`） [詳細](../data/papers/2026-11-01_Semantic-Interoperability-in-Federated-Digital-Twin-Systems-A-Systematic-Review-Through-the-Levels-of-Conceptual-Interoperability-Model_2611.02125.md)
+  When two companies connect their digital twins, software models of their plants kept up to date with live data, each twin must translate the other's data into its own terms, and that translation rule, called a mapping, can stop being…
+
+<!-- arxiv:2611.01879 -->
+- **[Graphs Have Structure: Declarative Manifolds, 3D Z-Order Monoid Roll-ups, and Zero-Simulation Visual Analytics in a Graph DBMS](http://arxiv.org/abs/2611.01879v1)** （2026-11-01 / `cs.DB`） [詳細](../data/papers/2026-11-01_Graphs-Have-Structure-Declarative-Manifolds-3D-Z-Order-Monoid-Roll-ups-and-Zero-Simulation-Visual-Analytics-in-a-Graph-DBMS_2611.01879.md)
+  Every real-world graph is embedded in an ambient structural manifold: proteins fold in Euclidean space ($R^3$), telecom networks sit on a planetary surface ($S^2 \\times R$), and ontologies and calendars form discrete subsumption posets…
+
+<!-- arxiv:2611.01692 -->
+- **[Phase-wise MLLM Tuning for Multi-framework WebUI Code Generation](http://arxiv.org/abs/2611.01692v1)** （2026-11-01 / `cs.SE`） [詳細](../data/papers/2026-11-01_Phase-wise-MLLM-Tuning-for-Multi-framework-WebUI-Code-Generation_2611.01692.md)
+  Multimodal large language models (MLLMs) achieve strong performance in translating WebUI screenshots into HTML/CSS.
+
+<!-- arxiv:2611.01514 -->
+- **[Federated Vector Retrieval across Heterogeneous VectorDBs](http://arxiv.org/abs/2611.01514v1)** （2026-11-01 / `cs.DB`） [詳細](../data/papers/2026-11-01_Federated-Vector-Retrieval-across-Heterogeneous-VectorDBs_2611.01514.md)
+  Vector databases are now core infrastructure for AI retrieval systems, yet many real deployments must serve queries over multiple independently constructed vectorDBs built with different embedding models.
+
+<!-- arxiv:2611.01454 -->
+- **[PROBE: Learned Proxy-Based Execution for Highly Selective Multimodal Semantic Queries](http://arxiv.org/abs/2611.01454v1)** （2026-11-01 / `cs.DB`） [詳細](../data/papers/2026-11-01_PROBE-Learned-Proxy-Based-Execution-for-Highly-Selective-Multimodal-Semantic-Queries_2611.01454.md)
+  Large language models (LLMs) enable semantic queries over unstructured data, but invoking an LLM on every row is prohibitively expensive.
+
+<!-- arxiv:2611.01377 -->
+- **[A Self-Exploring and Self-Evolving Paradigm for Adaptive Edge AI Development](http://arxiv.org/abs/2611.01377v1)** （2026-11-01 / `cs.AI`） [詳細](../data/papers/2026-11-01_A-Self-Exploring-and-Self-Evolving-Paradigm-for-Adaptive-Edge-AI-Development_2611.01377.md)
+  Large Language Models (LLMs) exhibit powerful code generation abilities, fostering agentic systems to automate edge AI application development.
+
+<!-- arxiv:2611.01363 -->
+- **[Eliminating Servers in State Machine Replication](http://arxiv.org/abs/2611.01363v1)** （2026-11-01 / `cs.DB`） [詳細](../data/papers/2026-11-01_Eliminating-Servers-in-State-Machine-Replication_2611.01363.md)
+  State Machine Replication (SMR) underpins many stateful systems, including distributed databases, coordination services, and metadata stores.
+
+<!-- arxiv:2611.01357 -->
+- **[ProofPatch: Reviewing Lean Statements and Keeping the Reviews Valid as Formalizations Evolve](http://arxiv.org/abs/2611.01357v1)** （2026-10-31 / `cs.LO`） [詳細](../data/papers/2026-10-31_ProofPatch-Reviewing-Lean-Statements-and-Keeping-the-Reviews-Valid-as-Formalizations-Evolve_2611.01357.md)
+  The kernel of the Lean proof assistant checks that a proof establishes its statement.
+
+<!-- arxiv:2611.01181 -->
+- **[Do Coding Agents Catch Their Own Bugs? (They Don't.)](http://arxiv.org/abs/2611.01181v1)** （2026-10-31 / `cs.SE`） [詳細](../data/papers/2026-10-31_Do-Coding-Agents-Catch-Their-Own-Bugs-They-Don-t_2611.01181.md)
+  In software development, engineers need to foresee and fix potential problems with their code that are not explicitly specified in requirements---such as pre-emptively considering vulnerabilities or other bugs from a code change.
+
+<!-- arxiv:2611.01173 -->
+- **[From Stories to Bugs: Story-Based Semantic Fuzzing of Interactive Systems](http://arxiv.org/abs/2611.01173v1)** （2026-10-31 / `cs.SE`） [詳細](../data/papers/2026-10-31_From-Stories-to-Bugs-Story-Based-Semantic-Fuzzing-of-Interactive-Systems_2611.01173.md)
+  Complex interactive systems hide business-logic failures along two complementary axes: deep state-dependent behaviors that require long valid prefixes and concurrency-sensitive failures that depend on the ordering of otherwise legal…
+
+<!-- arxiv:2611.00960 -->
+- **[Self-Refining Prompt Induction for Streaming Text-to-SQL](http://arxiv.org/abs/2611.00960v1)** （2026-10-31 / `cs.CL`） [詳細](../data/papers/2026-10-31_Self-Refining-Prompt-Induction-for-Streaming-Text-to-SQL_2611.00960.md)
+  Text-to-SQL assistants for streaming engines must handle dialect-specific types, windowing rules, and temporal semantics, including constructs poorly handled by generic prompts.
+
+<!-- arxiv:2611.00959 -->
+- **[NovaFilter - A Rule-Based ETL Staging Framework for Fault-Tolerant Relational Databases](http://arxiv.org/abs/2611.00959v1)** （2026-10-31 / `cs.DB`） [詳細](../data/papers/2026-10-31_NovaFilter---A-Rule-Based-ETL-Staging-Framework-for-Fault-Tolerant-Relational-Databases_2611.00959.md)
+  NovaFilter is a completely new approach to deriving structured relational data from heterogeneous input data in different data formats.
+
+<!-- arxiv:2611.00723 -->
+- **[Architecting Fairness-Aware LLM Interactions](http://arxiv.org/abs/2611.00723v1)** （2026-10-31 / `cs.SE`） [詳細](../data/papers/2026-10-31_Architecting-Fairness-Aware-LLM-Interactions_2611.00723.md)
+  Large Language Models (LLMs) are increasingly used as decision-support tools but may generate stereotypical, discriminatory, or unfair responses.
+
+<!-- arxiv:2611.00638 -->
+- **[ElectroChemLLM: A Multimodal LLM Pipeline for High-Fidelity Electrochemical Informatics](http://arxiv.org/abs/2611.00638v1)** （2026-10-31 / `cs.CL`） [詳細](../data/papers/2026-10-31_ElectroChemLLM-A-Multimodal-LLM-Pipeline-for-High-Fidelity-Electrochemical-Informatics_2611.00638.md)
+  Electrochemistry is central to solving many modern-day challenges, including energy storage systems for a sustainable future, and its advancement relies heavily on the data from past findings.
