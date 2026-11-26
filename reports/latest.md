@@ -1,65 +1,33 @@
-# arXiv デイリーサマリー — 2026-11-25
+# arXiv デイリーサマリー — 2026-11-26
 
-**新着 14 件**（UTC の収集日基準。公開日は各項目に記載）
+**新着 6 件**（UTC の収集日基準。公開日は各項目に記載）
 
 - 対象分野: `cs.DB`, `cs.SE`
 - キーワード: `semantic`, `Semantic Operators`, `database`, `DBMS`, `cardinality estimation`, `query optimization`, `large language model`
-- 主分野別: `cs.AI` 2 件、`cs.CR` 2 件、`cs.DB` 4 件、`cs.RO` 1 件、`cs.SE` 5 件
+- 主分野別: `cs.AI` 1 件、`cs.DB` 3 件、`cs.LG` 1 件、`cs.RO` 1 件
 
 各項目は原文の要旨冒頭の短い抜粋です。全文は「詳細」から読めます。
 
-<!-- arxiv:2611.33015 -->
-- **[PORTA: Systematic Discovery of Vulnerabilities in Identity Brokers](http://arxiv.org/abs/2611.33015v1)** （2026-11-24 / `cs.CR`） [詳細](../data/papers/2026-11-24_PORTA-Systematic-Discovery-of-Vulnerabilities-in-Identity-Brokers_2611.33015.md)
-  Identity brokers such as Keycloak, Vault, and Dex translate authentication proofs from an upstream identity provider into sessions for downstream services.
+<!-- arxiv:2611.34925 -->
+- **[One Ocean, Many Tasks: A Data-Grounded Simulation Suite and Benchmark for Marine Robotics](http://arxiv.org/abs/2611.34925v1)** （2026-11-25 / `cs.RO`） [詳細](../data/papers/2026-11-25_One-Ocean-Many-Tasks-A-Data-Grounded-Simulation-Suite-and-Benchmark-for-Marine-Robotics_2611.34925.md)
+  Simulation is essential for marine robotics, yet existing platforms often trade off between visually realistic worlds, high-throughput experimentation, and ocean-condition realism grounded in real data.
 
-<!-- arxiv:2611.32731 -->
-- **[Energy as a Service-Level Objective: Transaction-Level Energy Attribution](http://arxiv.org/abs/2611.32731v1)** （2026-11-24 / `cs.SE`） [詳細](../data/papers/2026-11-24_Energy-as-a-Service-Level-Objective-Transaction-Level-Energy-Attribution_2611.32731.md)
-  Service engineers assess every change against functional requirements and qualities such as reliability, performance and availability.
+<!-- arxiv:2611.34870 -->
+- **[Shape-Aware Three-Way Merge for RDF Knowledge Graphs: The schema defines the conflict: an implementation and evaluation](http://arxiv.org/abs/2611.34870v1)** （2026-11-25 / `cs.DB`） [詳細](../data/papers/2026-11-25_Shape-Aware-Three-Way-Merge-for-RDF-Knowledge-Graphs-The-schema-defines-the-conflict-an-implementation-and-evaluation_2611.34870.md)
+  Merging RDF serializations creates ordering conflicts and misses semantic ones.
 
-<!-- arxiv:2611.32676 -->
-- **[AI-Generated Code Issues: A Taxonomy from Repository Histories, AI Conversations, and Developer Interviews](http://arxiv.org/abs/2611.32676v1)** （2026-11-24 / `cs.SE`） [詳細](../data/papers/2026-11-24_AI-Generated-Code-Issues-A-Taxonomy-from-Repository-Histories-AI-Conversations-and-Developer-Interviews_2611.32676.md)
-  Large language models (LLMs) are increasingly used to generate source code, yet the quality issues in such code remain only partially understood.
+<!-- arxiv:2611.34363 -->
+- **[Single-Database Rewards Are Hackable: Counterfactual Execution for Trustworthy Text-to-SQL RL](http://arxiv.org/abs/2611.34363v1)** （2026-11-25 / `cs.LG`） [詳細](../data/papers/2026-11-25_Single-Database-Rewards-Are-Hackable-Counterfactual-Execution-for-Trustworthy-Text-to-SQL-RL_2611.34363.md)
+  Reinforcement learning (RL) for text-to-SQL agents pays a query when its result matches the reference on one database.
 
-<!-- arxiv:2611.32636 -->
-- **[Generating Property-Based Regression Tests from Source Code Semantics](http://arxiv.org/abs/2611.32636v1)** （2026-11-24 / `cs.SE`） [詳細](../data/papers/2026-11-24_Generating-Property-Based-Regression-Tests-from-Source-Code-Semantics_2611.32636.md)
-  Conventional unit tests (CUTs) check a method under test at fixed concrete inputs.
+<!-- arxiv:2611.33977 -->
+- **[Cache Replacement in Direct-Access Cloud OLAP-An Experimental Comparison and Practical Guidance](http://arxiv.org/abs/2611.33977v1)** （2026-11-25 / `cs.DB`） [詳細](../data/papers/2026-11-25_Cache-Replacement-in-Direct-Access-Cloud-OLAP-An-Experimental-Comparison-and-Practical-Guidance_2611.33977.md)
+  Direct-access cloud OLAP engines rely on local caches to hide remote object-store latency, yet the replacement design space remains poorly understood.
 
-<!-- arxiv:2611.32381 -->
-- **[Does Research-Paper Context Improve LLM-Generated Quadruped Navigation? An Exploratory Simulation Study](http://arxiv.org/abs/2611.32381v1)** （2026-11-24 / `cs.RO`） [詳細](../data/papers/2026-11-24_Does-Research-Paper-Context-Improve-LLM-Generated-Quadruped-Navigation-An-Exploratory-Simulation-Study_2611.32381.md)
-  Large language models can write competent robot navigation code, but not only does the research on the topic advance, a model may also, due to the volume of findings, fail to recall relevant findings and apply them to the task at hand.
+<!-- arxiv:2611.33763 -->
+- **[Data Agents Need a Map: Evolving, Demand-Driven Knowledge of Large Collections](http://arxiv.org/abs/2611.33763v1)** （2026-11-25 / `cs.DB`） [詳細](../data/papers/2026-11-25_Data-Agents-Need-a-Map-Evolving-Demand-Driven-Knowledge-of-Large-Collections_2611.33763.md)
+  Most data that could power rich analysis sits unintegrated and uncataloged in open data portals, data lakes, and collections of independently published tables.
 
-<!-- arxiv:2611.32374 -->
-- **[Validating Multi-Model AI-Generated Acceptance Criteria in Requirements Engineering](http://arxiv.org/abs/2611.32374v1)** （2026-11-24 / `cs.SE`） [詳細](../data/papers/2026-11-24_Validating-Multi-Model-AI-Generated-Acceptance-Criteria-in-Requirements-Engineering_2611.32374.md)
-  Large language models (LLMs) are increasingly used in software engineering to generate artifacts such as requirements, user stories, acceptance criteria, documentation, and code.
-
-<!-- arxiv:2611.32207 -->
-- **[When the Miner is the Generator: Rethinking the Separation Axiom in LLM-Driven Data Mining](http://arxiv.org/abs/2611.32207v1)** （2026-11-24 / `cs.DB`） [詳細](../data/papers/2026-11-24_When-the-Miner-is-the-Generator-Rethinking-the-Separation-Axiom-in-LLM-Driven-Data-Mining_2611.32207.md)
-  The theoretical foundation of data mining implicitly relies on an unstated premise, the Separation Axiom (SA), which assumes that mining tools and the data being analyzed are epistemologically independent.
-
-<!-- arxiv:2611.32089 -->
-- **[Automated Smoke Testing for Multi-ending Game Quests via Large Language Models](http://arxiv.org/abs/2611.32089v1)** （2026-11-24 / `cs.SE`） [詳細](../data/papers/2026-11-24_Automated-Smoke-Testing-for-Multi-ending-Game-Quests-via-Large-Language-Models_2611.32089.md)
-  Modern game quests are increasingly trending toward high freedom and multiple endings, making their design and testing more complex.
-
-<!-- arxiv:2611.32073 -->
-- **[Efficient Semantic ORDER BY via Transitivity-Aware LLM Batch Sorting](http://arxiv.org/abs/2611.32073v1)** （2026-11-24 / `cs.DB`） [詳細](../data/papers/2026-11-24_Efficient-Semantic-ORDER-BY-via-Transitivity-Aware-LLM-Batch-Sorting_2611.32073.md)
-  Large language models (LLMs) enable declarative semantic sorting through LLM-ORDER BY operators that rank tuples according to natural-language criteria over unstructured data.
-
-<!-- arxiv:2611.31993 -->
-- **[Not Just Any Example: Security Requirements and Fix Patterns for Guiding LLM Vulnerability Repair](http://arxiv.org/abs/2611.31993v1)** （2026-11-24 / `cs.CR`） [詳細](../data/papers/2026-11-24_Not-Just-Any-Example-Security-Requirements-and-Fix-Patterns-for-Guiding-LLM-Vulnerability-Repair_2611.31993.md)
-  Software vulnerabilities leave systems open to attack, and their remediation is often delayed.
-
-<!-- arxiv:2611.31893 -->
-- **[Toward Database-Native Genomics: A Vision for Declarative Genomic Analysis](http://arxiv.org/abs/2611.31893v1)** （2026-11-24 / `cs.DB`） [詳細](../data/papers/2026-11-24_Toward-Database-Native-Genomics-A-Vision-for-Declarative-Genomic-Analysis_2611.31893.md)
-  In recent years, numerous advancements in relational database management systems (RDBMS), including cloud-native and GPU-native paradigms, have resulted in highly competitive RDBMS performance for analytical workloads.
-
-<!-- arxiv:2611.31682 -->
-- **[LimoBench: How Street Smart Are Large Language Models?](http://arxiv.org/abs/2611.31682v1)** （2026-11-23 / `cs.AI`） [詳細](../data/papers/2026-11-23_LimoBench-How-Street-Smart-Are-Large-Language-Models_2611.31682.md)
-  Large language models (LLMs) have transformed how humans interact with information, enabling natural-language interfaces across various domains.
-
-<!-- arxiv:2611.31679 -->
-- **[Rethinking Document Indexing for LLM-based Analysis](http://arxiv.org/abs/2611.31679v1)** （2026-11-23 / `cs.DB`） [詳細](../data/papers/2026-11-23_Rethinking-Document-Indexing-for-LLM-based-Analysis_2611.31679.md)
-  Documents such as clinical records, legal contracts, and scientific papers are increasingly analyzed with large language models (LLMs).
-
-<!-- arxiv:2611.31554 -->
-- **[Agent Recovery Gone Wrong: Measuring Harm Beyond Duplicate Calls](http://arxiv.org/abs/2611.31554v1)** （2026-11-23 / `cs.AI`） [詳細](../data/papers/2026-11-23_Agent-Recovery-Gone-Wrong-Measuring-Harm-Beyond-Duplicate-Calls_2611.31554.md)
-  Code-executing LLM agents submit blocks of code that issue several API writes.
+<!-- arxiv:2611.33748 -->
+- **[REFORGE: LLM-Assisted RTL Bug Repair with Structured Context and Verification Feedback](http://arxiv.org/abs/2611.33748v1)** （2026-11-25 / `cs.AI`） [詳細](../data/papers/2026-11-25_REFORGE-LLM-Assisted-RTL-Bug-Repair-with-Structured-Context-and-Verification-Feedback_2611.33748.md)
+  Large language models (LLMs) can write and repair RTL, but successful compilation or testbench execution does not establish defect removal, behavioral preservation, security, or implementation feasibility.
